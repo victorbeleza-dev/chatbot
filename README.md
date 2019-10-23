@@ -1,24 +1,24 @@
 # chatbot-kotlin-dialogflow
-Chat app for Android made with Kotlin and Pusher that integrates a chatbot build with Dialogflow. Follow the tutorial [here](https://pusher.com/tutorials/chatbot-kotlin-dialogflow).
+Aplicativo de bate-papo para Android criado com Kotlin e Pusher que integra uma construção de chatbot ao Dialogflow. Siga o tutorial [aqui](https://pusher.com/tutorials/chatbot-kotlin-dialogflow).
 
 ## Getting Started
 
-1. Clone this repository.
-2. Create a [Pusher app](https://dashboard.pusher.com).
-3. Enter your Pusher app information in `server/src/main/kotlin/com/pusher/chatbotapi/MessageController.kt` and in `android/app/src/main/java/com/pusher/chatbot/ChatActivity.kt`.
-4. Create a [Dialogflow agent](https://console.dialogflow.com/api-client) and configure it either by following the steps of the tutorial or importing the zip file `TriviaBot.zip` in the root of this repo using the option *Export and Import* in the *Settings* page of your agent.
-5. In the *General* section of the *Settings* page, copy the *Project ID* and enter it in the class `server/src/main/kotlin/com/pusher/chatbotapi/MessageController.kt`.
-6. Go to your [Google Cloud Platform console](https://console.cloud.google.com/home/dashboard), choose the project created for your Dialogflow agent, create a new *Service account key* in the *APIs & Services*>*Credentials* section as a JSON file and download the file to a directory outside this project.
-7. Configure the environment variable `GOOGLE_APPLICATION_CREDENTIALS` and set as its value the location of the JSON file that contains the private key you created in the previous step.
-8. In a terminal window, go to the `server` directory and execute `gradlew bootRun` to start the server.
-9. In a terminal window in that directory and execute `ngrok http localhost:8080` to expose your local server to the world.
-10. Copy the HTTPS forwarding URL, something like https://5a4f24b2.ngrok.io.
-11. In your Dialogflow console, click on the *Fulfillment* option, enable the *Webhook* option, and add the URL you just copied from ngrok appending the path of the webhook endpoint (`webhook`).
-12. Open the app with Android Studio.
-13. Build the project and run it on two emulator.
-14. Choose an username and start sending messages
+1. Clone o repostitório.
+2. Crie uma conta no [Pusher app](https://dashboard.pusher.com).
+3. Insira as informações do seu aplicativo Pusher dentro `server/src/main/kotlin/com/pusher/chatbotapi/MessageController.kt` e dentro `android/app/src/main/java/com/pusher/chatbot/ChatActivity.kt`.
+4. Crie um agente do [Dialogflow agent](https://console.dialogflow.com/api-client) e configure-o seguindo as etapas do tutorial ou importando o arquivo zip `TriviaBot.zip` na raiz deste repositório usando a opção Exportar e Importar na página Configurações do seu agente.
+5. Na seção Geral da página *Configurações* , copie a ID do projeto e insira-a na classe `server/src/main/kotlin/com/pusher/chatbotapi/MessageController.kt`.
+6. Vá para o [Google Cloud Platform console](https://console.cloud.google.com/home/dashboard), escolha o projeto criado para o seu agente Dialogflow, crie uma nova chave de conta de serviço na seção APIs e serviços > Credenciais como um arquivo JSON e faça o download do arquivo para um diretório fora deste projeto.
+7. Configure a variável de ambiente `GOOGLE_APPLICATION_CREDENTIALS` e defina como valor o local do arquivo JSON que contém a chave privada que você criou na etapa anterior.
+8. Em uma janela do terminal, vá para o `server` diretório e execute  `gradlew bootRun` para iniciar o servidor.
+9. Em uma janela de terminal nesse diretório e execute `ngrok http localhost:8080` para expor seu servidor local ao mundo.
+10. Copie o URL de encaminhamento HTTPS, algo como https://5a4f24b2.ngrok.io .
+11. No console do Dialogflow, clique na opção Cumprimento , ative a opção Webhook e adicione a URL que você acabou de copiar do ngrok, anexando o caminho do nó de extremidade do webhook (`webhook`).
+12. Abra o aplicativo com o Android Studio.
+13. Crie o projeto e execute-o em dois emuladores.
+14. Escolha um nome de usuário e comece a enviar mensagens
 
-### Prerequisites
+### Prerequisitos
 
 - [Android Studio 3.1.4](https://developer.android.com/studio/index.html)
   - MinSdkVersion: 15
@@ -28,13 +28,13 @@ Chat app for Android made with Kotlin and Pusher that integrates a chatbot build
 - [Dialogflow (Google) account](https://console.dialogflow.com/api-client/#/login)
 - [ngrok](https://ngrok.com/)
 
-## Built With
+## Construido com
 
 * [Pusher](https://pusher.com/) - APIs to enable devs building realtime features
 * [Dialogflow](https://dialogflow.com/) A Google-owned developer of human–computer interaction technologies based on natural language conversations
 
-## Acknowledgments
-* Thanks to [Pusher](https://pusher.com/) for sponsoring this tutorial.
+## Agradecimentos
+* Obrigado a [Pusher](https://pusher.com/) pelo tutorial.
 
 ## LICENSE
 MIT
