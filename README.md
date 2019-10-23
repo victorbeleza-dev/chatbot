@@ -1,7 +1,7 @@
 # chatbot-kotlin-dialogflow
 Aplicativo de bate-papo para Android criado com Kotlin e Pusher que integra uma construção de chatbot ao Dialogflow. Siga o tutorial [aqui](https://pusher.com/tutorials/chatbot-kotlin-dialogflow).
 
-## Getting Started
+## Vamos Começar
 
 1. Clone o repostitório.
 2. Crie uma conta no [Pusher app](https://dashboard.pusher.com).
