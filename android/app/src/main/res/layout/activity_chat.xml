@@ -43,6 +43,7 @@
         <EditText
             android:id="@+id/txtMessage"
             android:hint="Enter message"
+            style="@style/MyEditTextStyle"
             android:background="@android:color/transparent"
             android:layout_gravity="center"
             android:layout_marginLeft="16dp"
@@ -54,13 +55,14 @@
 
         <Button
             android:id="@+id/btnSend"
-            android:text="SEND"
-            android:textSize="14dp"
-            android:clickable="true"
-            android:layout_width="64dp"
+            android:layout_width="wrap_content"
             android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/box_arounded"
+            android:clickable="true"
             android:gravity="center"
-            android:layout_gravity="bottom" />
+            android:text="Enviar"
+            android:textSize="14dp" />
 
     </LinearLayout>
 
